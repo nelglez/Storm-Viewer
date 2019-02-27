@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7AF0DD412226D186000659C6 /* StormImagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF0DD402226D186000659C6 /* StormImagesController.swift */; };
+		7AF0DD452226D62D000659C6 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF0DD442226D62D000659C6 /* Photo.swift */; };
 		7AFAFF2F21989CE10086C2E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFAFF2E21989CE10086C2E0 /* AppDelegate.swift */; };
 		7AFAFF3121989CE10086C2E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFAFF3021989CE10086C2E0 /* ViewController.swift */; };
 		7AFAFF3421989CE10086C2E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AFAFF3221989CE10086C2E0 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		7AF0DD402226D186000659C6 /* StormImagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormImagesController.swift; sourceTree = "<group>"; };
+		7AF0DD442226D62D000659C6 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		7AFAFF2B21989CE10086C2E0 /* Storm Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Storm Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFAFF2E21989CE10086C2E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFAFF3021989CE10086C2E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		7AF0DD462226D782000659C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7AF0DD442226D62D000659C6 /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7AFAFF2221989CE10086C2E0 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				7AFAFF2E21989CE10086C2E0 /* AppDelegate.swift */,
+				7AF0DD462226D782000659C6 /* Model */,
 				7AF0DD432226D289000659C6 /* View Controllers */,
 				7AF0DD422226D27B000659C6 /* Model Controller */,
 				7AFAFF3221989CE10086C2E0 /* Main.storyboard */,
@@ -209,6 +220,7 @@
 				7AF0DD412226D186000659C6 /* StormImagesController.swift in Sources */,
 				7AFAFF3121989CE10086C2E0 /* ViewController.swift in Sources */,
 				7AFAFF2F21989CE10086C2E0 /* AppDelegate.swift in Sources */,
+				7AF0DD452226D62D000659C6 /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

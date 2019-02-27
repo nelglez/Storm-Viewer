@@ -26,7 +26,8 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
-        cell.textLabel?.text = stormImagesController.pictures[indexPath.row]
+        let photos = stormImagesController.pictures[indexPath.row]
+        cell.textLabel?.text = photos.name
         
         return cell
     }
@@ -36,7 +37,8 @@ class ViewController: UITableViewController {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
             
             // 2: success! Now set its selectedImage property
-            vc.image = stormImagesController.pictures[indexPath.row]
+            let photos = stormImagesController.pictures[indexPath.row]
+            vc.image = photos
             
             // 3: Now push it into the navigation controller
             

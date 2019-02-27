@@ -10,7 +10,7 @@ import Foundation
 
 class StormImagesController {
 
-    private(set) var pictures: [String] = []
+    private(set) var pictures: [Photo] = []
     
     init() {
         getImages()
@@ -23,7 +23,9 @@ class StormImagesController {
         
         for item in items {
             if item.hasPrefix("nssl") {
-                pictures.append(item)
+                let photo = Photo(name: item)
+                //pictures.append(item)
+                pictures.append(photo)
             }
         }
     }

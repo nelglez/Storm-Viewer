@@ -13,7 +13,7 @@ class DetailViewController: UIViewController {
     
    // var selectedImage: String?//String because its the fileName of the image which is a string
     
-    var image: String? {
+    var image: Photo? {
         didSet {
             updateViews()
         }
@@ -35,8 +35,8 @@ class DetailViewController: UIViewController {
         guard isViewLoaded else {return}
         
         guard let image = image else {return}
-        title = image
-        imageView.image = UIImage(named: image)
+        title = image.name
+        imageView.image = UIImage(named: image.name)
     }
     
     override var prefersHomeIndicatorAutoHidden: Bool {
